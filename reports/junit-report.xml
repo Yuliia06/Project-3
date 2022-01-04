@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="3.-correct-quantity-of-an-item-is-added-to-the-mini-cart;add-fruits-to-the-shopping-cart-and-check-cart" tests="6" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="/Users/julianna/Downloads/Julia_test/features/add-items-to-cart.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we are on Willy&apos;s website" classname="3.-correct-quantity-of-an-item-is-added-to-the-mini-cart;add-fruits-to-the-shopping-cart-and-check-cart" time="19.781359305">
+        </testcase>
+        <testcase name="And that we accepted the standard cookie policy" classname="3.-correct-quantity-of-an-item-is-added-to-the-mini-cart;add-fruits-to-the-shopping-cart-and-check-cart" time="4.468473813">
+        </testcase>
+        <testcase name="And that we have have been through the initial where to deliver popup" classname="3.-correct-quantity-of-an-item-is-added-to-the-mini-cart;add-fruits-to-the-shopping-cart-and-check-cart" time="7.608320364">
+        </testcase>
+        <testcase name="Given that I am on the page - Fruit category" classname="3.-correct-quantity-of-an-item-is-added-to-the-mini-cart;add-fruits-to-the-shopping-cart-and-check-cart" time="6.429412835">
+        </testcase>
+        <testcase name="When I put a random number of each fruit" classname="3.-correct-quantity-of-an-item-is-added-to-the-mini-cart;add-fruits-to-the-shopping-cart-and-check-cart" time="30.706563798">
+        </testcase>
+        <testcase name="Then the cart should show the correct quantity of items" classname="3.-correct-quantity-of-an-item-is-added-to-the-mini-cart;add-fruits-to-the-shopping-cart-and-check-cart" time="6.916274054">
+        </testcase>
+    </testsuite>
+</testsuites>

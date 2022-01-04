@@ -1,0 +1,113 @@
+[
+  {
+    "description": "  As a user I want to be able to add 1 to several copies of an item in the shopping cart\n  so that I can buy it.",
+    "elements": [
+      {
+        "id": "3.-correct-quantity-of-an-item-is-added-to-the-mini-cart;add-fruits-to-the-shopping-cart-and-check-cart",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Add fruits to the shopping cart and check cart",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we are on Willy's website",
+            "result": {
+              "status": "passed",
+              "duration": 19781359305
+            },
+            "line": 6,
+            "match": {
+              "location": "/Users/julianna/Downloads/Julia_test/step-definitions/common-background.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we accepted the standard cookie policy",
+            "result": {
+              "status": "passed",
+              "duration": 4468473813
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/julianna/Downloads/Julia_test/step-definitions/common-background.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we have have been through the initial where to deliver popup",
+            "result": {
+              "status": "passed",
+              "duration": 7608320364
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/julianna/Downloads/Julia_test/step-definitions/common-background.js:21"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that I am on the page - Fruit category",
+            "result": {
+              "status": "passed",
+              "duration": 6429412835
+            },
+            "line": 11,
+            "match": {
+              "location": "/Users/julianna/Downloads/Julia_test/step-definitions/add-items-to-cart.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I put a random number of each fruit",
+            "result": {
+              "status": "passed",
+              "duration": 30706563798
+            },
+            "line": 12,
+            "match": {
+              "location": "/Users/julianna/Downloads/Julia_test/step-definitions/add-items-to-cart.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the cart should show the correct quantity of items",
+            "result": {
+              "status": "passed",
+              "duration": 6916274054
+            },
+            "line": 13,
+            "match": {
+              "location": "/Users/julianna/Downloads/Julia_test/step-definitions/add-items-to-cart.js:53"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 728253359
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/julianna/Downloads/Julia_test/node_modules/updated-selenium-cucumber-js/runtime/world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "3.-correct-quantity-of-an-item-is-added-to-the-mini-cart",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "3. Correct quantity of an item is added to the mini-cart",
+    "tags": [],
+    "uri": "/Users/julianna/Downloads/Julia_test/features/add-items-to-cart.feature"
+  }
+]

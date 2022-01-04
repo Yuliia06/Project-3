@@ -1,0 +1,18 @@
+{
+  "name": "willys-mini-cart-check-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-all": "// node ./node_modules/selenium-cucumber-js/index.js -s ./step-definitions",
+    "test": "node node_modules/updated-selenium-cucumber-js/index",
+    "test-mini-cart-sums": "node node_modules/updated-selenium-cucumber-js/index -f features/mini-cart-sums.feature",
+    "my-test": "node node_modules/updated-selenium-cucumber-js/index -f features/add-items-to-cart.feature"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "updated-selenium-cucumber-js": "^1.8.4"
+  }
+}
