@@ -1,4 +1,4 @@
-Feature: 8. Clean the cart
+Feature: Clean the cart
   As a user, I want to be able to empty my entire shopping cart
   so that I can start if I regret what I put in it completely.
 
@@ -11,4 +11,4 @@ Feature: 8. Clean the cart
     Given that I have two different items in the shopping cart
     When I click reset cart button
     And I confirm reseting the cart in opened dialog
-    Then the cart should not contain items
+    Then the cart should not contain any items
