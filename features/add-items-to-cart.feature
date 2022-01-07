@@ -1,4 +1,4 @@
-Feature: 3. Correct quantity of an item is added to the mini-cart
+Feature: Correct quantity of an item is added to the mini-cart
   As a user I want to be able to add 1 to several copies of an item in the shopping cart
   so that I can buy it.
 
