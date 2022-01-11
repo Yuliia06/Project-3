@@ -11,4 +11,4 @@ Feature: Clean the cart
     Given that I have two different items in the shopping cart
     When I click empty cart button
     And I confirm reseting the cart in opened dialog
-    Then the cart should not contain items
+    Then the cart should not contain any items
