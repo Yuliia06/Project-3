@@ -17,5 +17,5 @@ Feature: Remove an item in the shopping cart
 #  Scenario: Remove an item by clicking minus button
 #    Given I have three items in my shopping cart
 #    When I regret the first product on the shopping cart
-#    And I decrease the number of same product until zero by clicking on minus button
-#    Then the item should not be in the cart anymore
+#    And I decrease the number of same product by clicking on minus button
+#    Then the item should not be in the cart
