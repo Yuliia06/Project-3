@@ -24,35 +24,3 @@ module.exports = function () {
     // console.log('\nThe number of different products before deleting:\n', itemsList.length);
 
   });
-
-  this.When(/^I click on “Empty shopping cart” button$/, async function () {
-    await driver.sleep(50000);
-    await driver.wait(until.elementsLocated(by.css('[href*="varukorg"]')), 10000);
-    let shoppingCart = await $('[href*="varukorg"]');
-    await shoppingCart.click();
-    let trash = await $('svg[data-src="/icons/DELETE-24px.svg"]');
-    await trash.click();
-    waitAWhile();
-
-    await driver.wait(until.elementsLocated(by.css('button[data-testid="modal-confirm-button"]')), 10000);
-    let emptyConfirmation = await $('button[data-testid="modal-confirm-button"]');
-    emptyConfirmation.click();
-    await driver.sleep(2000);
-    let itemsListLength = await $$('[class^="ProductListItemstyles__StyledWrapper"]');
-    console.log('\nThe number of different products after deleting:\n', itemsListLength.length);
-    waitAWhile();
-  });
-
-
-  this.Then(/^It should delete all items in the shopping cart$/, async function () {
-    let emptyMiniCart =
-      await $$('[class^="ProductListItemstyles__StyledWrapper"]')
-        .then(found => !found.length);
-    if (emptyMiniCart === false) {
-      expect(console.log('\n!!!!!!!!!!!!!!!!!!!   ERORR: The shopping cart is not empty  !!!!!!!!\n'))
-    } else {
-      expect(emptyMiniCart).to.equal(true)
-    };
-
-  });
-}
