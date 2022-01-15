@@ -22,5 +22,37 @@ module.exports = function () {
 
     //let itemsList = await $$('[class^="ProductListItemstyles__StyledWrapper"]');
     // console.log('\nThe number of different products before deleting:\n', itemsList.length);
-
+    await helpers.loadPage('https://www.willys.se/varukorg');
+    await driver.sleep(10000);
   });
+
+  this.When(/^I click on “Empty shopping cart” button$/, async function () {
+
+    let allButtons = await driver.findElements(By.css("button"));
+    for(let button of allButtons){
+        let buttonText = await button.getText();
+        if(buttonText == "Töm varukorg"){
+          await button.click();
+        }
+    }
+    await driver.sleep(2000);
+
+    allButtons = await driver.findElements(By.css("button"));
+    for(let button of allButtons){
+        let buttonText = await button.getText();
+        if(buttonText == "Töm"){
+          await button.click();
+        }
+    }
+    waitAWhile();
+  });
+
+
+  this.Then(/^It should delete all items in the shopping cart$/, async function () {
+
+    await driver.sleep(3000);
+    let removeButtons = await driver.findElements(By.css('button[aria-label="Ta bort"]'))
+    console.log(removeButtons.length)
+    expect(removeButtons.length).to.equal(0)
+    });
+}
