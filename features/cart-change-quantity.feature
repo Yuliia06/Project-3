@@ -12,4 +12,3 @@ Feature: 6. Change quantity in the cart
     And that I have opened cart
     When I click on increase quantity button of the item in the cart
     Then the cart should show the correct total quantity of products
-    And the cart should show correct total price
