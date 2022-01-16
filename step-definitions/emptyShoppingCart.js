@@ -1,9 +1,3 @@
-const { $, $$, $$$ } = require('../helpers/element-selection.js');
-let slowDown = true;
-
-async function waitAWhile() {
-  await driver.sleep(slowDown ? 3000 : 0);
-}
 //let itemsListLength;
 module.exports = function () {
 
@@ -29,20 +23,20 @@ module.exports = function () {
   this.When(/^I click on “Empty shopping cart” button$/, async function () {
 
     let allButtons = await driver.findElements(By.css("button"));
-    for(let button of allButtons){
-        let buttonText = await button.getText();
-        if(buttonText == "Töm varukorg"){
-          await button.click();
-        }
+    for (let button of allButtons) {
+      let buttonText = await button.getText();
+      if (buttonText == "Töm varukorg") {
+        await button.click();
+      }
     }
     await driver.sleep(2000);
 
     allButtons = await driver.findElements(By.css("button"));
-    for(let button of allButtons){
-        let buttonText = await button.getText();
-        if(buttonText == "Töm"){
-          await button.click();
-        }
+    for (let button of allButtons) {
+      let buttonText = await button.getText();
+      if (buttonText == "Töm") {
+        await button.click();
+      }
     }
     waitAWhile();
   });
@@ -54,5 +48,5 @@ module.exports = function () {
     let removeButtons = await driver.findElements(By.css('button[aria-label="Ta bort"]'))
     console.log(removeButtons.length)
     expect(removeButtons.length).to.equal(0)
-    });
+  });
 }
