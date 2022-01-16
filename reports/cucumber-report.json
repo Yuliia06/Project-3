@@ -1,12 +1,12 @@
 [
   {
-    "description": "  As a user I want to be able to add 1 to several copies of an item in the shopping cart\n  so that I can buy it.",
+    "description": "  As a user, I want to be able to change the number of an item in the shopping cart\n  so that I can buy more or less of it than I initially thought.",
     "elements": [
       {
-        "id": "3.-correct-quantity-of-an-item-is-added-to-the-mini-cart;add-fruits-to-the-shopping-cart-and-check-cart",
+        "id": "6.-change-quantity-in-the-cart;increase-quantity-of-item-in-the-shopping-cart-and-check-sum",
         "keyword": "Scenario",
         "line": 10,
-        "name": "Add fruits to the shopping cart and check cart",
+        "name": "Increase quantity of item in the shopping cart and check sum",
         "steps": [
           {
             "arguments": [],
@@ -14,11 +14,11 @@
             "name": "that we are on Willy's website",
             "result": {
               "status": "passed",
-              "duration": 19781359305
+              "duration": 14200109500
             },
             "line": 6,
             "match": {
-              "location": "/Users/julianna/Downloads/Julia_test/step-definitions/common-background.js:3"
+              "location": "/Users/julianna/Desktop/Julia_test/step-definitions/common-background.js:3"
             }
           },
           {
@@ -27,11 +27,11 @@
             "name": "that we accepted the standard cookie policy",
             "result": {
               "status": "passed",
-              "duration": 4468473813
+              "duration": 3856015127
             },
             "line": 7,
             "match": {
-              "location": "/Users/julianna/Downloads/Julia_test/step-definitions/common-background.js:7"
+              "location": "/Users/julianna/Desktop/Julia_test/step-definitions/common-background.js:7"
             }
           },
           {
@@ -40,50 +40,63 @@
             "name": "that we have have been through the initial where to deliver popup",
             "result": {
               "status": "passed",
-              "duration": 7608320364
+              "duration": 5071976613
             },
             "line": 8,
             "match": {
-              "location": "/Users/julianna/Downloads/Julia_test/step-definitions/common-background.js:21"
+              "location": "/Users/julianna/Desktop/Julia_test/step-definitions/common-background.js:21"
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that I am on the page - Fruit category",
+            "name": "that I have an item in the shopping cart",
             "result": {
               "status": "passed",
-              "duration": 6429412835
+              "duration": 10063421555
             },
             "line": 11,
             "match": {
-              "location": "/Users/julianna/Downloads/Julia_test/step-definitions/add-items-to-cart.js:5"
+              "location": "/Users/julianna/Desktop/Julia_test/step-definitions/cart-change-quantity.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that I have opened cart",
+            "result": {
+              "status": "passed",
+              "duration": 2110994139
+            },
+            "line": 12,
+            "match": {
+              "location": "/Users/julianna/Desktop/Julia_test/step-definitions/cart-change-quantity.js:30"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I put a random number of each fruit",
+            "name": "I click on increase quantity button of the item in the cart",
             "result": {
               "status": "passed",
-              "duration": 30706563798
+              "duration": 2834092333
             },
-            "line": 12,
+            "line": 13,
             "match": {
-              "location": "/Users/julianna/Downloads/Julia_test/step-definitions/add-items-to-cart.js:9"
+              "location": "/Users/julianna/Desktop/Julia_test/step-definitions/cart-change-quantity.js:35"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "the cart should show the correct quantity of items",
+            "name": "the cart should show the correct total quantity of products",
             "result": {
               "status": "passed",
-              "duration": 6916274054
+              "duration": 63162764
             },
-            "line": 13,
+            "line": 14,
             "match": {
-              "location": "/Users/julianna/Downloads/Julia_test/step-definitions/add-items-to-cart.js:53"
+              "location": "/Users/julianna/Desktop/Julia_test/step-definitions/cart-change-quantity.js:45"
             }
           },
           {
@@ -91,11 +104,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 728253359
+              "duration": 646350060
             },
             "hidden": true,
             "match": {
-              "location": "/Users/julianna/Downloads/Julia_test/node_modules/updated-selenium-cucumber-js/runtime/world.js:250"
+              "location": "/Users/julianna/Desktop/Julia_test/node_modules/updated-selenium-cucumber-js/runtime/world.js:250"
             }
           }
         ],
@@ -103,11 +116,11 @@
         "type": "scenario"
       }
     ],
-    "id": "3.-correct-quantity-of-an-item-is-added-to-the-mini-cart",
+    "id": "6.-change-quantity-in-the-cart",
     "keyword": "Feature",
     "line": 1,
-    "name": "3. Correct quantity of an item is added to the mini-cart",
+    "name": "6. Change quantity in the cart",
     "tags": [],
-    "uri": "/Users/julianna/Downloads/Julia_test/features/add-items-to-cart.feature"
+    "uri": "/Users/julianna/Desktop/Julia_test/features/cart-change-quantity.feature"
   }
 ]
