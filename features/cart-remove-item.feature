@@ -1,13 +1,14 @@
-Feature: 7. Remove item from the cart
-  As a user, I want to be able to remove an item from the shopping cart
-  so that I can regret that I have put it there.
+ Feature: Remove an item in the shopping cart
+  In order to regret buying an item in the shopping cart,
+  the user wants the ability to remove that item.
 
   Background:
     Given that we are on Willy's website
     And that we accepted the standard cookie policy
     And that we have have been through the initial where to deliver popup
 
-  Scenario: Decrease item quantity to 0 in the shopping cart
-    Given that I have an any item in the shopping cart
-    When I click decrease quantity button in the cart until quantity not 0
-    Then the cart should not contain item
+  Scenario: Remove an item by enter 0 and press return
+    Given There are three items in my shopping cart
+    When I regret the first product on the shopping cart
+    Then click x to remove product
+    Then the item should not be in the cart anymore
